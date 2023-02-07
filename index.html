@@ -17,7 +17,7 @@
 <body>
 
     <!-- ТОП Меню -->
-    <section class="section header-top border-bottom d-none d-lg-block">
+    <section class="section header-top border-bottom p-2 d-none d-lg-block">
         <div class="container d-flex align-items-center justify-content-between">
             <div class="d-none d-lg-block">
                 <a class="navbar-brand fw-700 d-inline-flex align-items-center hover-opacity" href="index.html">
@@ -26,19 +26,24 @@
                 </a>
             </div>
             <ul class="nav me-auto">
-                <li class="nav-item"><a class="nav-link active py-3" href="#">Каталог сайтов</a></li>
-                <li class="nav-item"><a class="nav-link py-3" href="#">Продвижение</a></li>
-                <li class="nav-item"><a class="nav-link py-3" href="#">Реклама</a></li>
-                <li class="nav-item"><a class="nav-link py-3" href="#">Блог</a></li>
-                <li class="nav-item"><a class="nav-link py-3" href="#">Партнёры</a></li>
+                <li class="nav-item"><a class="nav-link active" href="shop.html">Каталог сайтов</a></li>
+                <li class="nav-item"><a class="nav-link" href="seo.html">Продвижение</a></li>
+                <li class="nav-item"><a class="nav-link" href="promotion.html">Реклама</a></li>
+                <li class="nav-item"><a class="nav-link" href="partners.html">Партнёры</a></li>
             </ul>
-            <a class="color-black color-green-hover fs-5 fw-medium" href="tel:+74951595901">+7 (495) 159-59-01</a>
+            <div class="d-flex align-items-center">
+                <div class="d-flex me-3">
+                    <a class="color-black color-primary-1-hover fs-3 me-2" href="tel:+74951595901"><i class="bx bxl-whatsapp"></i></a>
+                    <a class="color-black color-primary-1-hover fs-3 me-2" href="tel:+74951595901"><i class="bx bxl-telegram"></i></a>
+                </div>
+                <a class="color-black color-primary-1-hover fs-5 fw-medium" href="tel:+74951595901">+7 (495) 159-59-01</a>
+            </div>
         </div>
     </section>
 
     <!-- Меню -->
     <header class="header sticky-top shadow-sm py-2">
-        <nav class="navbar navbar-expand-xl">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
 
                 <div class="d-lg-none">
@@ -62,18 +67,17 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item"><a class="nav-link active" href="index.html">Создание сайтов</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Акции</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Поддержка</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                            <li class="nav-item"><a class="nav-link" href="price.html">Цены</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфолио</a></li>
+                            <li class="nav-item"><a class="nav-link" href="testimonials.html">Отзывы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Новости</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-primary d-none d-lg-block ms-4">Заказать сайт</button>
+                <button type="button" class="btn btn-primary d-none d-lg-block ms-4" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать сайт</button>
 
             </div>
         </nav>
@@ -94,36 +98,40 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="swiper heroSwiper">
-                            <div class="swiper-wrapper mb-5">
-                                <div class="swiper-slide">
-                                    <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
-                                        style="height: 400px;">
-                                        Slide 1
+                        <div class="p-md-5">
+                            <div class="position-relative p-md-2">
+                                <div class="swiper heroSwiper navigation-outside">
+                                    <div class="swiper-wrapper mb-5">
+                                        <div class="swiper-slide">
+                                            <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
+                                                style="height: 400px;">
+                                                Slide 1
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
+                                                style="height: 400px;">
+                                                Slide 2
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
+                                                style="height: 400px;">
+                                                Slide 3
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
+                                                style="height: 400px;">
+                                                Slide 4
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
-                                        style="height: 400px;">
-                                        Slide 2
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
-                                        style="height: 400px;">
-                                        Slide 3
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
-                                        style="height: 400px;">
-                                        Slide 4
-                                    </div>
-                                </div>
+                                <div class="swiper-button-next d-none d-lg-flex" id="heroSwiper-next"></div>
+                                <div class="swiper-button-prev d-none d-lg-flex" id="heroSwiper-prev"></div>
                             </div>
-                            <div class="swiper-button-next d-none d-lg-flex"></div>
-                            <div class="swiper-button-prev d-none d-lg-flex"></div>
-                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -140,9 +148,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row gy-4 row-cols-1 row-cols-md-1 row-cols-lg-3">
+                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
                     <div class="col">
-                        <div class="card card-price border b-color-green border-2 rounded-4 py-4 h-100">
+                        <div class="card card-price border b-color-primary-1 border-2 rounded-4 py-4 h-100">
                             <div class="card-body">
                                 <div class="text-center mb-2">
                                     <p class="h2 card-title">Лендинг</p>
@@ -159,7 +167,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card-price border b-color-green border-2 rounded-4 py-4 h-100">
+                        <div class="card card-price border b-color-primary-1 border-2 rounded-4 py-4 h-100">
                             <div class="card-body">
                                 <div class="text-center mb-2">
                                     <p class="h2 card-title">Сайт-Бизнес</p>
@@ -176,7 +184,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card-price border b-color-green border-2 rounded-4 py-4 h-100">
+                        <div class="card card-price border b-color-primary-1 border-2 rounded-4 py-4 h-100">
                             <div class="card-body">
                                 <div class="text-center mb-2">
                                     <p class="h2 card-title">Интернет-магазин</p>
@@ -190,6 +198,23 @@
                                 <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
                                     data-bs-target="#feedbackFormModal">Что входит в цену</button>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-price border b-color-primary-1 border-2 rounded-4 py-4 h-100">
+                            <div class="card-body">
+                                <div class="text-center mb-2">
+                                    <p class="h2 card-title">Аудит вашего сайта</p>
+                                    <p class="text-muted">Маркетинговый анализ</p>
+                                </div>
+                                <div class="text-center mb-3">
+                                    <p class="fs-3 fw-700">Бесплатно</p>
+                                </div>
+                            </div>
+                            <!-- <div class="card-footer text-center">
+                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                                    data-bs-target="#feedbackFormModal">Что входит в цену</button>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -398,9 +423,9 @@
                                 <div id="q5" class="accordion-collapse collapse " aria-labelledby="faq-heading-5"
                                     data-bs-parent="#faq">
                                     <div class="accordion-body fw-light pt-0">
+                                        <img class="mx-auto" src="img/map-with-markers.webp" alt="">
                                         <p>Мы открыты для клиентов из любой точки земного шара и стараемся расширять
                                             географический список наших работ.</p>
-                                        <img class="mx-auto" src="img/map-with-markers.webp" alt="">
 
                                     </div>
                                 </div>
@@ -428,7 +453,7 @@
                                 <img class="card-img-top" src="img/blog-card-01.webp" alt="Image">
                             </a>
                             <div class="card-body">
-                                <p class="card-title fw-600 mb-3">
+                                <p class="card-title">
                                     <a class="text-decoration-none" href="blog-item.html">Несколько общих правил,
                                         которым мы советуем следовать при создании контента</a>
                                 </p>
@@ -450,7 +475,7 @@
                                 <img class="card-img-top" src="img/blog-card-03.webp" alt="Image">
                             </a>
                             <div class="card-body">
-                                <p class="card-title fw-600 mb-3">
+                                <p class="card-title">
                                     <a class="text-decoration-none" href="blog-item.html">Как привлечь трафик на
                                         сайт?</a>
                                 </p>
@@ -472,7 +497,7 @@
                                 <img class="card-img-top" src="img/blog-card-02.webp" alt="Image">
                             </a>
                             <div class="card-body">
-                                <p class="card-title fw-600 mb-3">
+                                <p class="card-title">
                                     <a class="text-decoration-none" href="blog-item.html">Вывести сайт в топ выдачи
                                         поисковых систем: стратегии продвижения.</a>
                                 </p>
@@ -494,7 +519,7 @@
                                 <img class="card-img-top" src="img/blog-card-06.webp" alt="Image">
                             </a>
                             <div class="card-body">
-                                <p class="card-title fw-600 mb-3">
+                                <p class="card-title">
                                     <a class="text-decoration-none" href="blog-item.html">С наступившим Новым годом и
                                         Рождеством!</a>
                                 </p>
@@ -514,11 +539,6 @@
             </div>
         </section>
 
-        <!-- Шаблон секции -->
-        <!-- <section class="section py-5">
-            <div class="container"></div>
-        </section> -->
-
     </main>
 
     <!-- Футер -->
@@ -528,12 +548,11 @@
                 <div class="col-lg-8 order-lg-2">
                     <div class="text-center text-lg-end">
                         <ul class="nav justify-content-center justify-content-lg-end">
-                            <li class="nav-item"><a href="index.html" class="nav-link px-2">Создание сайтов</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2">Веб-студия</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2">Кейсы</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2">Шаблоны</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2">Каталог сайтов</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2">Продвижение</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2">Реклама</a></li>
                             <li class="nav-item"><a href="#" class="nav-link px-2">Блог</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2">Контакты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2">Партнёры</a></li>
                         </ul>
                     </div>
                 </div>
@@ -553,6 +572,75 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal Main Form -->
+    <div class="modal modal-mainForm fade" id="mainForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <p class="fs-4 fw-light">Закажи сайт для своего бизнеса</p>
+                        <p class="small">Наши менеджеры свяжутся с Вами в ближайшее время</p>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="name@mail.ru">
+                            <label for="floatingName">Имя</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingPhone" placeholder="+7 (___) ___-__-__">
+                            <label for="floatingPhone">Телефон</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Телефон</option>
+                                <option value="1">What's App</option>
+                                <option value="2">Telegram</option>
+                                <option value="3">Viber</option>
+                            </select>
+                            <label for="floatingSelect">Способ связи</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="ex-check-2" checked>
+                            <label class="form-check-label small text-muted" for="ex-check-2">Я согласен(а) с <a class="text-muted text-decoration-underline" href="policy.html" target="_blank">политикой обработки
+                                    персональных данных</a></label>
+                        </div>
+                        <div class="text-center mt-4">
+                            <!-- ......................................................................... -->
+                            <!-- .............................. ВНИМАНИЕ!!! .............................. -->
+                            <!-- У кнопки type="button" ТОЛЬКО ДЛЯ ДЕМОНСТРАЦИИ открытия окна "Спасибо"!!! -->
+                            <!-- ......... Само собой у кнопки в форме должно быть type="submit" ......... -->
+                            <!-- ......................................................................... -->
+                            <button type="button" class="btn btn-primary" data-bs-target="#mainThank" data-bs-toggle="modal">Оставить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Thank You -->
+    <div class="modal modal-mainForm fade" id="mainThank" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center">
+                        <div class="text-center">
+                            <p class="fs-4 fw-light">Спасибо!<br> Ваши данные успешно отправлены</p>
+                            <p class="small">Наши менеджеры уже вступились в схватку между собой, в ближайшее время с Вами свяжется лучший...</p>
+                            <img class="mx-auto" src="img/call-back-02.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

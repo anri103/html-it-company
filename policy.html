@@ -17,7 +17,7 @@
 <body>
 
     <!-- ТОП Меню -->
-    <section class="section header-top border-bottom d-none d-lg-block">
+    <section class="section header-top border-bottom p-2 d-none d-lg-block">
         <div class="container d-flex align-items-center justify-content-between">
             <div class="d-none d-lg-block">
                 <a class="navbar-brand fw-700 d-inline-flex align-items-center hover-opacity" href="index.html">
@@ -26,19 +26,24 @@
                 </a>
             </div>
             <ul class="nav me-auto">
-                <li class="nav-item"><a class="nav-link active py-3" href="#">Каталог сайтов</a></li>
-                <li class="nav-item"><a class="nav-link py-3" href="#">Продвижение</a></li>
-                <li class="nav-item"><a class="nav-link py-3" href="#">Реклама</a></li>
-                <li class="nav-item"><a class="nav-link py-3" href="#">Блог</a></li>
-                <li class="nav-item"><a class="nav-link py-3" href="#">Партнёры</a></li>
+                <li class="nav-item"><a class="nav-link active" href="shop.html">Каталог сайтов</a></li>
+                <li class="nav-item"><a class="nav-link" href="seo.html">Продвижение</a></li>
+                <li class="nav-item"><a class="nav-link" href="promotion.html">Реклама</a></li>
+                <li class="nav-item"><a class="nav-link" href="partners.html">Партнёры</a></li>
             </ul>
-            <a class="color-black color-green-hover fs-5 fw-medium" href="tel:+74951595901">+7 (495) 159-59-01</a>
+            <div class="d-flex align-items-center">
+                <div class="d-flex me-3">
+                    <a class="color-black color-primary-1-hover fs-3 me-2" href="tel:+74951595901"><i class="bx bxl-whatsapp"></i></a>
+                    <a class="color-black color-primary-1-hover fs-3 me-2" href="tel:+74951595901"><i class="bx bxl-telegram"></i></a>
+                </div>
+                <a class="color-black color-primary-1-hover fs-5 fw-medium" href="tel:+74951595901">+7 (495) 159-59-01</a>
+            </div>
         </div>
     </section>
 
     <!-- Меню -->
     <header class="header sticky-top shadow-sm py-2">
-        <nav class="navbar navbar-expand-xl">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
 
                 <div class="d-lg-none">
@@ -62,18 +67,17 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item"><a class="nav-link active" href="index.html">Создание сайтов</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Акции</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Поддержка</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                            <li class="nav-item"><a class="nav-link" href="price.html">Цены</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфолио</a></li>
+                            <li class="nav-item"><a class="nav-link" href="testimonials.html">Отзывы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Новости</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-primary d-none d-lg-block ms-4">Заказать сайт</button>
+                <button type="button" class="btn btn-primary d-none d-lg-block ms-4" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать сайт</button>
 
             </div>
         </nav>
@@ -137,12 +141,11 @@
                 <div class="col-lg-8 order-lg-2">
                     <div class="text-center text-lg-end">
                         <ul class="nav justify-content-center justify-content-lg-end">
-                            <li class="nav-item"><a href="index.html" class="nav-link px-2">Создание сайтов</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2">Веб-студия</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2">Кейсы</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2">Шаблоны</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2">Каталог сайтов</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2">Продвижение</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2">Реклама</a></li>
                             <li class="nav-item"><a href="#" class="nav-link px-2">Блог</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2">Контакты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2">Партнёры</a></li>
                         </ul>
                     </div>
                 </div>
@@ -162,6 +165,75 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal Main Form -->
+    <div class="modal modal-mainForm fade" id="mainForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <p class="fs-4 fw-light">Закажи сайт для своего бизнеса</p>
+                        <p class="small">Наши менеджеры свяжутся с Вами в ближайшее время</p>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="name@mail.ru">
+                            <label for="floatingName">Имя</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingPhone" placeholder="+7 (___) ___-__-__">
+                            <label for="floatingPhone">Телефон</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Телефон</option>
+                                <option value="1">What's App</option>
+                                <option value="2">Telegram</option>
+                                <option value="3">Viber</option>
+                            </select>
+                            <label for="floatingSelect">Способ связи</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="ex-check-2" checked>
+                            <label class="form-check-label small text-muted" for="ex-check-2">Я согласен(а) с <a class="text-muted text-decoration-underline" href="policy.html" target="_blank">политикой обработки
+                                    персональных данных</a></label>
+                        </div>
+                        <div class="text-center mt-4">
+                            <!-- ......................................................................... -->
+                            <!-- .............................. ВНИМАНИЕ!!! .............................. -->
+                            <!-- У кнопки type="button" ТОЛЬКО ДЛЯ ДЕМОНСТРАЦИИ открытия окна "Спасибо"!!! -->
+                            <!-- ......... Само собой у кнопки в форме должно быть type="submit" ......... -->
+                            <!-- ......................................................................... -->
+                            <button type="button" class="btn btn-primary" data-bs-target="#mainThank" data-bs-toggle="modal">Оставить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Thank You -->
+    <div class="modal modal-mainForm fade" id="mainThank" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center">
+                        <div class="text-center">
+                            <p class="fs-4 fw-light">Спасибо!<br> Ваши данные успешно отправлены</p>
+                            <p class="small">Наши менеджеры уже вступились в схватку между собой, в ближайшее время с Вами свяжется лучший...</p>
+                            <img class="mx-auto" src="img/call-back-02.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

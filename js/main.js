@@ -24,8 +24,8 @@ window.addEventListener('DOMContentLoaded', event => {
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '#heroSwiper-next',
+            prevEl: '#heroSwiper-prev',
         },
     });
 
