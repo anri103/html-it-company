@@ -249,11 +249,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        
-                    </div>
-                </div> -->
             </div>
             <div class="swiper portfolioSwiper">
                 <div class="swiper-wrapper mb-5">
@@ -278,8 +273,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="swiper-button-next d-none d-lg-flex"></div>
-                <div class="swiper-button-prev d-none d-lg-flex"></div>
+                <div class="swiper-button-next d-none d-lg-flex" id="portfolioSwiper-next"></div>
+                <div class="swiper-button-prev d-none d-lg-flex" id="portfolioSwiper-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </section>
@@ -436,105 +431,111 @@
             </div>
         </section>
 
-        <!-- Блог -->
+        <!-- Новости -->
         <section class="section py-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div class="text-center mb-5">
-                            <h2 class="h1">Блог</h2>
+                            <h2 class="h1">Наши новости</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                    <div class="col">
-                        <div class="card card-blog shadow-sm h-100">
-                            <a class="hover-shine" href="blog-item.html">
-                                <img class="card-img-top" src="img/blog-card-01.webp" alt="Image">
-                            </a>
-                            <div class="card-body">
-                                <p class="card-title">
-                                    <a class="text-decoration-none" href="blog-item.html">Несколько общих правил,
-                                        которым мы советуем следовать при создании контента</a>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <span class="small text-muted">1 час назад</span>
-                                    <div class="d-flex align-items-center">
-                                        <i class="bx bx-show-alt small text-muted mt-1 me-1"></i>
-                                        <span class="small text-muted">17</span>
+                <div class="position-relative">
+                    <div class="swiper relatedPosts navigation-outside">
+                        <div class="swiper-wrapper mb-5">
+                            <div class="swiper-slide h-auto p-2">
+                                <article class="card card-blog shadow-sm h-100">
+                                    <a class="hover-shine" href="blog-item.html">
+                                        <img class="card-img-top" src="img/blog-card-01.webp" alt="Image">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <a class="text-decoration-none" href="blog-item.html">Вывести сайт в топ
+                                                выдачи поисковых систем: стратегии продвижения.</a>
+                                        </p>
                                     </div>
-                                </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="small text-muted">3 часа назад</span>
+                                            <div class="d-flex align-items-center">
+                                                <i class="bx bx-show-alt small text-muted mt-1 me-1"></i>
+                                                <span class="small text-muted">256</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide h-auto p-2">
+                                <article class="card card-blog shadow-sm h-100">
+                                    <a class="hover-shine" href="blog-item.html">
+                                        <img class="card-img-top" src="img/blog-card-02.webp" alt="Image">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <a class="text-decoration-none" href="blog-item.html">Как привлечь трафик на
+                                                сайт?</a>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="small text-muted">Вчера</span>
+                                            <div class="d-flex align-items-center">
+                                                <i class="bx bx-show-alt small text-muted mt-1 me-1"></i>
+                                                <span class="small text-muted">518</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide h-auto p-2">
+                                <article class="card card-blog shadow-sm h-100">
+                                    <a class="hover-shine" href="blog-item.html">
+                                        <img class="card-img-top" src="img/blog-card-03.webp" alt="Image">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <a class="text-decoration-none" href="blog-item.html">Несколько общих
+                                                правил, которым мы советуем следовать при создании контента:</a>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="small text-muted">2 дня назад</span>
+                                            <div class="d-flex align-items-center">
+                                                <i class="bx bx-show-alt small text-muted mt-1 me-1"></i>
+                                                <span class="small text-muted">768</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide h-auto p-2">
+                                <article class="card card-blog shadow-sm h-100">
+                                    <a class="hover-shine" href="blog-item.html">
+                                        <img class="card-img-top" src="img/blog-card-04.webp" alt="Image">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <a class="text-decoration-none" href="blog-item.html">Как сделать сайт привлекательным и повысить доверие пользователей?</a>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="small text-muted">1 неделю назад</span>
+                                            <div class="d-flex align-items-center">
+                                                <i class="bx bx-show-alt small text-muted mt-1 me-1"></i>
+                                                <span class="small text-muted">943</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="col">
-                        <div class="card card-blog shadow-sm h-100">
-                            <a class="hover-shine" href="blog-item.html">
-                                <img class="card-img-top" src="img/blog-card-03.webp" alt="Image">
-                            </a>
-                            <div class="card-body">
-                                <p class="card-title">
-                                    <a class="text-decoration-none" href="blog-item.html">Как привлечь трафик на
-                                        сайт?</a>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <span class="small text-muted">Вчера</span>
-                                    <div class="d-flex align-items-center">
-                                        <i class="bx bx-show-alt small text-muted mt-1 me-1"></i>
-                                        <span class="small text-muted">35</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card-blog shadow-sm h-100">
-                            <a class="hover-shine" href="blog-item.html">
-                                <img class="card-img-top" src="img/blog-card-02.webp" alt="Image">
-                            </a>
-                            <div class="card-body">
-                                <p class="card-title">
-                                    <a class="text-decoration-none" href="blog-item.html">Вывести сайт в топ выдачи
-                                        поисковых систем: стратегии продвижения.</a>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <span class="small text-muted">2 дня назад</span>
-                                    <div class="d-flex align-items-center">
-                                        <i class="bx bx-show-alt small text-muted mt-1 me-1"></i>
-                                        <span class="small text-muted">97</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card-blog shadow-sm h-100">
-                            <a class="hover-shine" href="blog-item.html">
-                                <img class="card-img-top" src="img/blog-card-06.webp" alt="Image">
-                            </a>
-                            <div class="card-body">
-                                <p class="card-title">
-                                    <a class="text-decoration-none" href="blog-item.html">С наступившим Новым годом и
-                                        Рождеством!</a>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <span class="small text-muted">2 недели назад</span>
-                                    <div class="d-flex align-items-center">
-                                        <i class="bx bx-show-alt small text-muted mt-1 me-1"></i>
-                                        <span class="small text-muted">170</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-button-next d-none d-lg-flex" id="relatedPosts-next"></div>
+                    <div class="swiper-button-prev d-none d-lg-flex" id="relatedPosts-prev"></div>
                 </div>
             </div>
         </section>
@@ -551,7 +552,7 @@
                             <li class="nav-item"><a href="#" class="nav-link px-2">Каталог сайтов</a></li>
                             <li class="nav-item"><a href="#" class="nav-link px-2">Продвижение</a></li>
                             <li class="nav-item"><a href="#" class="nav-link px-2">Реклама</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2">Блог</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2">Новости</a></li>
                             <li class="nav-item"><a href="#" class="nav-link px-2">Партнёры</a></li>
                         </ul>
                     </div>

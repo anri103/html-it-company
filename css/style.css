@@ -50,7 +50,7 @@ Version: 1.0
     --bs-body-font-family: 'Open Sans', sans-serif;
     --bs-body-font-size: 1.125rem;
     --bs-body-font-weight: 400;
-    --bs-body-line-height: 1.2;
+    --bs-body-line-height: 1.5;
     --bs-body-color: #120e1e;
     --bs-body-bg: #fff;
     --bs-border-color: #dee2e6;
@@ -413,6 +413,14 @@ img {
     z-index: 5;
 }
 
+.w-100 {
+    width: 100% !important;
+}
+
+.w-auto {
+    width: auto !important;
+}
+
 .nav {
     --bs-nav-link-padding-x: 1rem;
     --bs-nav-link-padding-y: 0.5rem;
@@ -714,6 +722,17 @@ img {
     --bs-accordion-btn-icon-transform: rotate(-225deg);
 }
 
+.card.card-portfolio {
+    --bs-link-color-rgb: 18, 14, 30;
+    --bs-link-hover-color-rgb: 28, 163, 69;
+    --bs-card-border-width: 0;
+    --bs-card-cap-padding-y: 1rem;
+}
+
+.card.card-portfolio .card-title {
+    font-weight: 400;
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ + MEDIA ]*/
@@ -723,6 +742,14 @@ img {
 @media (min-width: 768px) {}
 
 @media (min-width: 992px) {
+
+    .w-lg-100 {
+        width: 100% !important;
+    }
+    
+    .w-lg-auto {
+        width: auto !important;
+    }
 
     .navbar-expand-lg .navbar-nav .nav-link.active,
     .navbar-expand-lg .navbar-nav .show>.nav-link {
