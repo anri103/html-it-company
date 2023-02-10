@@ -92,17 +92,13 @@ h2,
 h1,
 .h1 {
     font-family: var(--ff-main);
-    font-weight: var(--fw-medium);
+    font-weight: 600;
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ + LINKS ]*/
 
 a {
-    text-decoration: none;
-}
-
-.breadcrumb a {
     text-decoration: none;
 }
 
@@ -421,6 +417,10 @@ img {
     width: auto !important;
 }
 
+.mt-n5 {
+    margin-top: -3rem;
+}
+
 .nav {
     --bs-nav-link-padding-x: 1rem;
     --bs-nav-link-padding-y: 0.5rem;
@@ -592,10 +592,6 @@ img {
     word-wrap: normal;
 }
 
-.breadcrumb {
-    margin-bottom: 0;
-}
-
 /*//////////////////////////////////////////////////////////////////
 [ + MAIN CONTENT ]*/
 
@@ -731,6 +727,16 @@ img {
 
 .card.card-portfolio .card-title {
     font-weight: 400;
+}
+
+.card.card-personal {
+    --bs-card-border-width: 0;
+    --bs-card-cap-padding-y: 1rem;
+}
+
+.card.card-testimonials {
+    --bs-card-border-width: 0;
+    --bs-card-cap-padding-y: 1rem;
 }
 
 

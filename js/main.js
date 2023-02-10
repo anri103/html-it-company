@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', event => {
     // [ Слайдер на странице index.html ]
 
     const heroSwiper = new Swiper('.heroSwiper', {
-        slidesPerView: 1,
         spaceBetween: 24,
         loop: true,
         grabCursor: true,
@@ -79,6 +78,99 @@ window.addEventListener('DOMContentLoaded', event => {
         navigation: {
             nextEl: '#relatedPosts-next',
             prevEl: '#relatedPosts-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        },
+    });
+
+    //////////////////////////////////////////////////////////////////
+    // [ Слайдер на странице about.html ]
+
+    const aboutSwiper = new Swiper('.aboutSwiper', {
+        spaceBetween: 24,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '#aboutSwiper-next',
+            prevEl: '#aboutSwiper-prev',
+        },
+    });
+
+    const personalSwiper = new Swiper('.personalSwiper', {
+        slidesPerView: 1,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '#personalSwiper-next',
+            prevEl: '#personalSwiper-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        },
+    });
+
+    const testimonialSwiper = new Swiper('.testimonialSwiper', {
+        spaceBetween: 24,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    const certificateSwiper = new Swiper('.certificateSwiper', {
+        slidesPerView: 1,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '#certificateSwiper-next',
+            prevEl: '#certificateSwiper-prev',
         },
         breakpoints: {
             768: {
