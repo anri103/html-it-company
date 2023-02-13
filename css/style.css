@@ -38,6 +38,7 @@ Version: 1.0
     --color-black: #120e1e;
     --color-primary-1: #1ca345;
     --color-primary-2: #278544;
+    --bs-primary-rgb: 28, 163, 69;
     --color-gray: #838189;
     --color-white: #fff;
     --ff-main: 'Open Sans', sans-serif;
@@ -739,6 +740,11 @@ img {
     --bs-card-cap-padding-y: 1rem;
 }
 
+.card.card-shop-item {
+    --bs-card-border-width: 0;
+    --bs-card-cap-padding-y: 1rem;
+}
+
 .btn-video-play {
     position: absolute;
     top: 50%;
@@ -829,6 +835,20 @@ img {
     .navbar-expand-lg .navbar-nav .nav-link.active,
     .navbar-expand-lg .navbar-nav .show>.nav-link {
         background-color: rgb(248, 249, 250);
+    }
+
+    .offcanvas-collapse {
+        background-color: transparent;
+        bottom: auto!important;
+        display: block;
+        height: auto!important;
+        left: auto!important;
+        position: static;
+        right: auto!important;
+        top: auto!important;
+        transform: none!important;
+        visibility: visible;
+        width: 100%!important;
     }
 }
 
