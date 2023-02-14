@@ -219,6 +219,22 @@
         </div>
     </footer>
 
+    <!-- Modal Video Testimonial -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/lMBi_20a68c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal Main Form -->
     <div class="modal modal-mainForm fade" id="mainForm" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
@@ -279,29 +295,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-center">
                         <div class="text-center">
                             <p class="fs-4 fw-light">Спасибо!<br> Ваши данные успешно отправлены</p>
-                            <p class="small">Наши менеджеры уже вступились в схватку между собой, в ближайшее время с
-                                Вами свяжется лучший...</p>
-                            <img class="mx-auto" src="img/call-back-02.gif" alt="">
+                            <p class="small">В ближайшее время с Вами свяжется менеджер</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_pszpctnx.json"  background="transparent"  speed="0.5"  style="width: 250px; height: 250px;"  loop  autoplay></lottie-player>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Video Testimonial -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="ratio ratio-16x9">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/lMBi_20a68c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -310,6 +311,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/lottie-player.js"></script>
     <script src="js/main.js"></script>
 
 </body>
