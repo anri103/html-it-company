@@ -65,7 +65,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto">
+                        <ul class="navbar-nav me-auto mb-4 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="index.html">Создание сайтов</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
                             <li class="nav-item"><a class="nav-link active" href="price.html">Цены</a></li>
@@ -74,6 +74,40 @@
                             <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
                             <li class="nav-item"><a class="nav-link" href="blog.html">Новости</a></li>
                         </ul>
+                        <div class="d-lg-none mb-4 mb-lg-0">
+                            <ul class="mobile-second-nav nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="shop.html">Каталог сайтов</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Продвижение</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Реклама</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Партнёры</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="d-lg-none mb-4 mb-lg-0">
+                            <ul class="mobile-contact-nav nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="tel:+74951595901">+7 (495) 159-59-01</a></li>
+                                <li class="nav-item"><a class="nav-link" href="mailto:support@amdmedia.ru">support@amdmedia.ru</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="d-lg-none mb-4 mb-lg-0">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a class="color-black color-primary-1-hover fs-3 me-2" href="#">
+                                        <i class="bx bxl-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="color-black color-primary-1-hover fs-3 me-2" href="#">
+                                        <i class="bx bxl-telegram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="offcanvas-header border-top">
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать сайт</button>
                     </div>
                 </div>
 
@@ -94,7 +128,7 @@
                         <div class="text-center">
                             <h1 class="h1">Цены на создание сайтов</h1>
                             <div class="mt-3">
-                                <a class="btn btn-primary" href="#"><i class="bx bxs-file-pdf"></i> Прайс лист</a>
+                                <a class="btn btn-primary btn-lg" href="#"><i class="bx bxs-file-pdf"></i> Прайс лист</a>
                             </div>
                         </div>
                     </div>
@@ -102,27 +136,6 @@
             </div>
         </section>
 
-        <style>
-            .price-table {}
-
-            .price-table>*+* {
-                margin-top: -2px;
-            }
-
-            .price-table>*:nth-child(2n) {
-                background-color: var(--bs-light);
-            }
-
-            .price-table>*:first-child {
-                border-top-left-radius: 1rem;
-                border-top-right-radius: 1rem;
-            }
-
-            .price-table>*:last-child {
-                border-bottom-right-radius: 1rem;
-                border-bottom-left-radius: 1rem;
-            }
-        </style>
         <section class="section py-5">
             <div class="container">
                 <div class="mb-5">
@@ -179,11 +192,218 @@
                     </div>
                 </div>
 
-                <p class="h2 mb-4">Разработка интернет-магазинов</p>
-                <p class="h2 mb-4">Наполнение и маркетинг</p>
-                <p class="h2 mb-4">Маркетплейсы</p>
-                <p class="h2 mb-4">Цены на услуги продвижения</p>
-                <p class="h2 mb-4">Цены на дополнительные услуги</p>
+                <div class="mb-5">
+                    <p class="h2 mb-4">Разработка интернет-магазинов</p>
+                    <div class="price-table">
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Оптимальный интернет-магазин</p>
+                                    <p>Полнофункциональный магазин с каталогом товаров (до 5000 товаров), корзиной, настраиваемыми скидками, 60 систем платежей и доставки.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">9 500 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">С дополнительными опциями</p>
+                                    <p>Пакет расширений магазина для размещения большого ассортимента товаров. Поддерживает до 15 000 товаров (и выше), предусмотрен умный поиск по каталогу, интеграция с 1С и МойСклад, встроенная бонусная система и инструменты для повышения продаж, мультиссылка для соцсетей и еще 15 дополнений.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">26 200 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <p class="h2 mb-4">Наполнение и маркетинг</p>
+                    <div class="price-table">
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Наполнение сайта “под ключ”</p>
+                                    <p>Проведем маркетинговые исследования, анализ ваших конкурентов, напишем и разместим продающие тексты, SEO-оптимизацию, наполним сайт товарами. Полностью упакуем сайт и подготовим к приему посетителей.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">от 60 000 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <p class="h2 mb-4">Маркетплейсы</p>
+                    <div class="price-table">
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Интеграция с маркеплейсами</p>
+                                    <p>Сервис управления продажами на маркетплейсах</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">4 490 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <p class="h2 mb-4">Цены на услуги продвижения</p>
+                    <div class="price-table">
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Разработка контекстной рекламы Яндекс.Директ</p>
+                                    <p>Сертифицированные специалисты проведут многоуровневый анализ конкурентов и грамотно настроят рекламную кампанию. Гарантируем повышение конверсии в 2 раза!</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">от 10 000 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Сопровождение контекстной рекламы Яндекс.Директ</p>
+                                    <p>Вы сможете регулярно узнавать о статусе и результатах рекламной кампании. Мы будем предоставлять вам полные отчёты о каждом действии, направленном на повышение эффективности рекламы...</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">от 15 000 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Поисковая оптимизация сайта</p>
+                                    <p>Мы оптимизируем ваш сайт под ключевые запросы в поисковых системах и приведём его в соответствие с алгоритмами. Ваш сайт будет адаптирован под запросы пользователей, улучшен для продвижения и максимально развит. Минимальный заказ — 5 страниц.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">25 000 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Комплексное продвижение сайта</p>
+                                    <p>Вы сможете получить целевой трафик покупателей и стабильный поток заявок из поисковых систем уже через несколько недель! Мы действуем по индивидуальному плану работ, который разрабатываем для каждого сайта индивидуально.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">от 35 000 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <p class="h2 mb-4">Цены на дополнительные услуги</p>
+                    <div class="price-table">
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Разработка логотипа</p>
+                                    <p>Вы можете выбрать любой логотип, а мы доработаем его под вашу компанию — название, фирменные цвета.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">от 3 900 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Разработка логотипа</p>
+                                    <p>Вы можете выбрать любой логотип, а мы доработаем его под вашу компанию — название, фирменные цвета.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">от 3 900 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Разработка логотипа</p>
+                                    <p>Вы можете выбрать любой логотип, а мы доработаем его под вашу компанию — название, фирменные цвета.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">от 3 900 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Разработка логотипа</p>
+                                    <p>Вы можете выбрать любой логотип, а мы доработаем его под вашу компанию — название, фирменные цвета.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">от 3 900 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item border b-color-primary-1 border-2 p-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-8 col-xl-8">
+                                    <p class="fs-4">Разработка логотипа</p>
+                                    <p>Вы можете выбрать любой логотип, а мы доработаем его под вашу компанию — название, фирменные цвета.</p>
+                                </div>
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fs-4 fw-600">от 3 900 ₽</span>
+                                        <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
