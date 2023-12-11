@@ -123,10 +123,10 @@
     </header>
 
     <!-- Контейнер -->
-    <main class="main py-5">
+    <main class="main">
 
         <!-- Первый экран -->
-        <section class="section bg-light" style="margin-top:-3rem; padding: 7rem 0;">
+        <section class="section-hero section bg-light">
             <div class="container">
                 <div class="row gy-4 align-items-center">
                     <div class="col-lg-6">
@@ -137,40 +137,38 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="p-md-5">
-                            <div class="position-relative p-md-2">
-                                <div class="swiper heroSwiper navigation-outside">
-                                    <div class="swiper-wrapper mb-5">
-                                        <div class="swiper-slide">
-                                            <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
-                                                style="height: 400px;">
-                                                Slide 1
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
-                                                style="height: 400px;">
-                                                Slide 2
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
-                                                style="height: 400px;">
-                                                Slide 3
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
-                                                style="height: 400px;">
-                                                Slide 4
-                                            </div>
+                        <div class="position-relative">
+                            <div class="swiper heroSwiper navigation-outside">
+                                <div class="swiper-wrapper mb-5">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
+                                            style="height: 400px;">
+                                            Slide 1
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
+                                            style="height: 400px;">
+                                            Slide 2
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
+                                            style="height: 400px;">
+                                            Slide 3
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex align-items-center justify-content-center bg-white rounded-4"
+                                            style="height: 400px;">
+                                            Slide 4
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="swiper-button-next d-none d-lg-flex" id="heroSwiper-next"></div>
-                                <div class="swiper-button-prev d-none d-lg-flex" id="heroSwiper-prev"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
+                            <div class="swiper-button-next d-none d-lg-flex" id="heroSwiper-next"></div>
+                            <div class="swiper-button-prev d-none d-lg-flex" id="heroSwiper-prev"></div>
                         </div>
                     </div>
                 </div>
@@ -178,7 +176,7 @@
         </section>
 
         <!-- Тарифы -->
-        <section class="section py-5">
+        <section class="section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -238,13 +236,12 @@
                     </div>
                     <div class="col">
                         <div class="card card-price border border-2 rounded-4 shadow-sm py-4 h-100">
-                            <div class="card-body">
+                            <div class="card-body d-flex flex-column justify-content-center">
                                 <div class="text-center mb-2">
                                     <p class="h2 card-title">Аудит вашего сайта</p>
-                                    <p class="text-muted">Маркетинговый анализ</p>
                                 </div>
                                 <div class="text-center mb-3">
-                                    <p class="fs-3 fw-700">Бесплатно</p>
+                                    <p class="text-primary fs-3 fw-700">Бесплатно</p>
                                 </div>
                             </div>
                         </div>
@@ -254,24 +251,22 @@
         </section>
 
         <!-- Инфо блок -->
-        <section class="section py-5">
-            <div class="container">
-                <div class="row gy-4 align-items-center justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="text-center text-lg-start">
+        <section class="section-cta section">
+            <img class="section-cta__img" src="img/support.webp" alt="">
+            <div class="position-relative">
+                <div class="container">
+                    <div class="section-cta__heading">
+                        <div class="text-center text-lg-start" style="max-width: 600px;">
                             <h2 class="h1">Удобная веб-студия для начинающих</h2>
                             <p>Поддержка и обучение работе с сайтом</p>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="img/support.webp" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Портфолио -->
-        <section class="section py-5 bg-light">
+        <section class="section bg-light">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -312,7 +307,7 @@
         </section>
 
         <!-- FAQ -->
-        <section class="section py-5">
+        <section class="section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -464,7 +459,7 @@
         </section>
 
         <!-- Новости -->
-        <section class="section py-5">
+        <section class="section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -576,7 +571,7 @@
     </main>
 
     <!-- Футер -->
-    <footer class="footer py-5 bg-light">
+    <footer class="footer bg-light">
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-8 order-lg-2">

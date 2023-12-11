@@ -67,6 +67,7 @@ Version: 1.0
 
 html::-webkit-scrollbar {
     width: .5rem;
+    height: .5rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -287,8 +288,6 @@ textarea {
 
 img {
     display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 .ff-main {
@@ -415,10 +414,6 @@ img {
     width: auto !important;
 }
 
-.mt-n5 {
-    margin-top: -3rem;
-}
-
 .nav {
     --bs-nav-link-padding-x: 1rem;
     --bs-nav-link-padding-y: 0.5rem;
@@ -439,8 +434,21 @@ img {
     text-transform: uppercase;
 }
 
+.py-7 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ + CONTENT ]*/
+
+.section {
+    padding: 3rem 0;
+}
+
+.section.bg-light {
+    padding: 5rem 0;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ + HEADER ]*/
@@ -847,6 +855,31 @@ img {
     border-bottom-left-radius: 1rem;
 }
 
+.section-cta {
+    position: relative;
+    padding: 50px 0 550px;
+    overflow-x: clip;
+}
+
+.section-cta__img {
+    position: absolute;
+    bottom: 0;
+    right: -350px;
+}
+
+.section-cta__heading {
+    position: relative;
+
+}
+
+@media (min-width: 992px) {
+    .section-cta {
+        padding: 250px 0 300px;
+    }
+    .section-cta__img {
+        right: 0;
+    }
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ + MEDIA ]*/

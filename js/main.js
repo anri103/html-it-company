@@ -87,7 +87,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 slidesPerView: 3,
             },
             1200: {
-                slidesPerView: 4,
+                slidesPerView: 3,
             },
         },
     });
